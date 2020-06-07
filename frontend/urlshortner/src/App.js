@@ -5,9 +5,8 @@ import Base from './Base'
 
 export default function App() {
   return (
-    <Base title="Home Page" description="Welcome to the Danny's Store">
+    <Base title="Convert URL" description="Welcome to the url shortner service">
       <div className="row text-center">
-        <h1 className="text-white">All Of Our Products :</h1>
         <div className="row">
         </div>
       </div>
