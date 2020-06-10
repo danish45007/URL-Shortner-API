@@ -2,6 +2,7 @@
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const app = express();
 
 // Exporting Routes
@@ -17,6 +18,9 @@ app.use("/",indexRoute);
 app.use("/api/url",urlRoute);
 
 
+// Middlewares
+app.use(cors());
+   
 // DB Connection
 mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
